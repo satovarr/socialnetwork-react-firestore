@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
-import { Login } from './pages/Login';
-import { Home } from './pages/Home';
-import { Register } from './pages/Register';
+import { Login } from './pages/login/Login';
+import { Home } from './pages/home/Home';
+import { Register } from './pages/register/Register';
 import { AuthProvider } from './context/authContext';
 import { ProtectedRoute } from './pages/ProtectedRoute';
 
 function App() {
   return (
-    <div className="bg-slate-300 h-screen text-black flex">
+    <div>
       <AuthProvider>
         <Routes>
           <Route path='/' element={
@@ -19,12 +19,6 @@ function App() {
         </Routes>
       </AuthProvider>
     </div>
-    /*
-    <div className="App bg-light" style={{height: "100vh"}}>
-      <h1 className='pd-5 mt-5'>Studia</h1>
-      <Login/>
-    </div>
-    */
   );
 }
 

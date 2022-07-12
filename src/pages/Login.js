@@ -52,6 +52,8 @@ export function Login() {
 
     return <div className='w-full max-w-xs m-auto'>
         {error && <Alert message={error}></Alert>}
+
+        <h4 className='text-6xl font-normal leading-normal mt-0 mb-2 text-green-800'>Studia</h4>
         <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className='mb-4'>
                 <label htmlFor="email" className='block text-gray-700 text-sm font.fold mb-2'>Email</label>
